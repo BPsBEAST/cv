@@ -1,19 +1,18 @@
 'use strict';
 const translations={
 pt:{
-skip:"Saltar para o conteúdo",navProjects:"Projetos",navAbout:"Sobre",navExperience:"Experiência",navServices:"Serviços",navContact:"Vamos falar",
+skip:"Saltar para o conteúdo",navProjects:"O que faço",navAbout:"Sobre",navExperience:"Experiência",navServices:"Serviços",navContact:"Vamos falar",
 heroAvailability:"Aberto a oportunidades e novos projetos",modeCareer:"Quero contratar talento",modeBusiness:"Preciso de um website",
 heroKicker:"OLÁ, SOU O BRUNO PINTO · PORTO, PORTUGAL",
 heroTitle:"Software, cloud e <em>ideias</em> que ganham forma.",
 heroDescription:"Mestrando em Engenharia Informática, com experiência prática em desenvolvimento web, infraestrutura cloud e segurança. Gosto de transformar desafios em soluções digitais claras e funcionais.",
-heroPrimary:"Explorar projetos",heroSecondary:"Ver experiência",heroNote:"Do código à experiência de quem utiliza.",visualNote:"Curiosidade técnica. Atenção ao detalhe.",heroTagsIntro:"ÁREAS DE INTERESSE",
+heroPrimary:"Explorar competências",heroSecondary:"Ver experiência",heroNote:"Do código à experiência de quem utiliza.",visualNote:"Curiosidade técnica. Atenção ao detalhe.",heroTagsIntro:"ÁREAS DE INTERESSE",
 introLabel:"DUAS FORMAS DE TRABALHARMOS JUNTOS",introTitle:"Tecnologia útil. Experiências memoráveis.",introBody:"Se procuras alguém para integrar uma equipa técnica, ou precisas de uma presença digital mais forte para o teu negócio, encontras aqui o meu percurso, os projetos que construo e uma forma direta de falar comigo.",introLink:"Conta-me o teu desafio",
-projectsLabel:"TRABALHO SELECIONADO",projectsTitle:"Projetos, não apenas palavras.",projectsIntro:"Algumas das experiências em que aplico desenvolvimento, interface e pensamento técnico para criar soluções.",
-projectTraining:"Website responsivo de apresentação de formações profissionais, com animações, organização de conteúdos e pontos de contacto para potenciais clientes.",
-projectAsk:"Pedir algo semelhante",projectGym:"Aplicação web para registo de treinos, cargas, progressão e histórico, com perfis e funcionalidades sociais. Em desenvolvimento contínuo.",
-projectGames:"Plataforma de jogos web com contas, perfis, rankings, histórico, níveis e experiências multiplayer com integração Supabase.",
-projectCloud:"Trabalho técnico desenvolvido no estágio da Visionware: instâncias Ubuntu, SSH, redes e regras de segurança, com exploração de automatização de infraestrutura através de Terraform.",
-viewRepo:"Ver no GitHub",projectExperienceLink:"Ver experiência",projectsFoot:"Cada projeto é uma oportunidade para aprender, melhorar e criar algo útil.",allGitHub:"Explorar o meu GitHub",
+projectsLabel:"O QUE FAÇO",projectsTitle:"Áreas onde transformo ideias em soluções.",projectsIntro:"Combino desenvolvimento, pensamento técnico e atenção à experiência de utilização — do primeiro conceito à implementação.",
+cap1Title:"Websites & interfaces",cap1Body:"Experiências digitais responsivas, com foco em clareza, usabilidade e uma apresentação profissional em qualquer dispositivo.",
+cap2Title:"Aplicações & software",cap2Body:"Desenvolvimento de funcionalidades, integração de dados e construção de aplicações orientadas a necessidades reais.",
+cap3Title:"Cloud & segurança",cap3Body:"Exploração, configuração e automatização de infraestrutura, com atenção às redes, aos acessos e às boas práticas de segurança.",
+githubHeading:"Queres explorar o lado técnico?",githubBody:"Podes conhecer o código e o meu trabalho independente diretamente no GitHub.",githubAction:"Abrir o meu GitHub",photoCaption:"PESSOAS, IDEIAS E TECNOLOGIA.",
 aboutLabel:"QUEM SOU",aboutTitle:"Por detrás do código.",aboutStatement:"Acredito em tecnologia que resolve problemas — e em experiências digitais que são tão boas de usar como de construir.",
 aboutSignature:"ENGENHARIA INFORMÁTICA · PORTUGAL",aboutP1:"Sou licenciado em Segurança Informática em Redes de Computadores e frequento o Mestrado em Engenharia Informática na ESTG do Politécnico do Porto.",
 aboutP2:"Durante os estágios na Visionware e na Virtualp, trabalhei com cloud, desenvolvimento web, APIs REST e bases de dados. Continuo a consolidar essa base através de projetos próprios.",
@@ -30,19 +29,18 @@ processLabel:"COMO TRABALHAMOS",processTitle:"Simples, claro e em conjunto.",pro
 contactKicker:"VAMOS COMEÇAR UMA CONVERSA",contactTitle:"Uma boa ideia começa com um <em>olá.</em>",contactBody:"Para uma oportunidade profissional, uma colaboração ou um website para o teu negócio — conta-me o que tens em mente.",emailAction:"Enviar email",footerText:"Bruno Pinto · Engenharia Informática, software e web. Construído com atenção ao detalhe.",footerRights:"TODOS OS DIREITOS RESERVADOS"
 },
 en:{
-skip:"Skip to content",navProjects:"Projects",navAbout:"About",navExperience:"Experience",navServices:"Services",navContact:"Let's talk",
+skip:"Skip to content",navProjects:"Expertise",navAbout:"About",navExperience:"Experience",navServices:"Services",navContact:"Let's talk",
 heroAvailability:"Open to opportunities and new projects",modeCareer:"I'm hiring",modeBusiness:"I need a website",
 heroKicker:"HI, I'M BRUNO PINTO · PORTO, PORTUGAL",
 heroTitle:"Software, cloud & <em>ideas</em> brought to life.",
 heroDescription:"Computer Engineering master's student with hands-on experience in web development, cloud infrastructure and security. I enjoy turning complex challenges into clear, practical digital solutions.",
-heroPrimary:"Explore projects",heroSecondary:"View experience",heroNote:"From code to user experience.",visualNote:"Technical curiosity. Attention to detail.",heroTagsIntro:"AREAS OF INTEREST",
+heroPrimary:"Explore expertise",heroSecondary:"View experience",heroNote:"From code to user experience.",visualNote:"Technical curiosity. Attention to detail.",heroTagsIntro:"AREAS OF INTEREST",
 introLabel:"TWO WAYS TO WORK TOGETHER",introTitle:"Useful technology. Memorable experiences.",introBody:"Whether you're looking for a new team member or a stronger digital presence for your business, this is where you can explore my background, see my projects and get in touch.",introLink:"Tell me about your challenge",
-projectsLabel:"SELECTED WORK",projectsTitle:"Projects, not just promises.",projectsIntro:"A selection of things I've worked on, bringing together software development, user interfaces and technical problem-solving.",
-projectTraining:"Responsive website showcasing professional training courses, with animations, structured content and clear contact opportunities for prospective customers.",
-projectAsk:"Request something similar",projectGym:"Web application for logging workouts, sets, weights and progress, with history, profiles and social features. In active development.",
-projectGames:"Web gaming platform with accounts, profiles, leaderboards, match history, levels and multiplayer features built with Supabase.",
-projectCloud:"Technical project completed during my Visionware internship: Ubuntu instances, SSH, networking and security rules, exploring infrastructure automation with Terraform.",
-viewRepo:"View on GitHub",projectExperienceLink:"View experience",projectsFoot:"Every project is an opportunity to learn, improve and build something useful.",allGitHub:"Explore my GitHub",
+projectsLabel:"WHAT I DO",projectsTitle:"Turning ideas into practical solutions.",projectsIntro:"I combine software development, technical thinking and attention to user experience — from the initial concept to implementation.",
+cap1Title:"Websites & interfaces",cap1Body:"Responsive digital experiences with a focus on clarity, usability and professional presentation across devices.",
+cap2Title:"Applications & software",cap2Body:"Feature development, data integration and practical applications built around real-world needs.",
+cap3Title:"Cloud & security",cap3Body:"Exploring, configuring and automating infrastructure with attention to networks, access controls and security best practices.",
+githubHeading:"Want to explore the technical side?",githubBody:"You can explore my code and independent work directly on GitHub.",githubAction:"Visit my GitHub",photoCaption:"PEOPLE, IDEAS & TECHNOLOGY.",
 aboutLabel:"ABOUT ME",aboutTitle:"Beyond the code.",aboutStatement:"I believe in technology that solves real problems — and digital experiences that are just as enjoyable to use as they are to create.",
 aboutSignature:"COMPUTER ENGINEERING · PORTUGAL",aboutP1:"I hold a bachelor's degree in Computer Network Security and am pursuing a master's degree in Computer Engineering at ESTG, Polytechnic Institute of Porto.",
 aboutP2:"During internships at Visionware and Virtualp, I worked with cloud infrastructure, web development, REST APIs and databases. I continue building on these foundations through independent projects.",
@@ -60,8 +58,8 @@ contactKicker:"LET'S START A CONVERSATION",contactTitle:"Every good idea starts 
 }
 };
 const variantCopy={
-pt:{career:{primary:"Explorar projetos",secondary:"Ver experiência",title:"Software, cloud e <em>ideias</em> que ganham forma.",desc:"Mestrando em Engenharia Informática, com experiência prática em desenvolvimento web, infraestrutura cloud e segurança. Gosto de transformar desafios em soluções digitais claras e funcionais.",primaryHref:"#projetos",secondaryHref:"#experiencia"},business:{primary:"Falar sobre o teu site",secondary:"Ver projetos web",title:"Sites que inspiram <em>confiança</em> e geram oportunidades.",desc:"Desenvolvo experiências web responsivas e claras para ajudar empresas e profissionais a apresentarem melhor o seu trabalho e a facilitarem o contacto com novos clientes.",primaryHref:"#contacto",secondaryHref:"#projetos"}},
-en:{career:{primary:"Explore projects",secondary:"View experience",title:"Software, cloud & <em>ideas</em> brought to life.",desc:"Computer Engineering master's student with hands-on experience in web development, cloud infrastructure and security. I enjoy turning complex challenges into clear, practical digital solutions.",primaryHref:"#projetos",secondaryHref:"#experiencia"},business:{primary:"Let's discuss your site",secondary:"See web projects",title:"Websites that build <em>trust</em> and opportunities.",desc:"I create responsive, clear web experiences that help companies and professionals showcase their work and make it easy for customers to reach them.",primaryHref:"#contacto",secondaryHref:"#projetos"}}
+pt:{career:{primary:"Explorar competências",secondary:"Ver experiência",title:"Software, cloud e <em>ideias</em> que ganham forma.",desc:"Mestrando em Engenharia Informática, com experiência prática em desenvolvimento web, infraestrutura cloud e segurança. Gosto de transformar desafios em soluções digitais claras e funcionais.",primaryHref:"#projetos",secondaryHref:"#experiencia"},business:{primary:"Falar sobre o teu site",secondary:"Explorar competências",title:"Sites que inspiram <em>confiança</em> e geram oportunidades.",desc:"Desenvolvo experiências web responsivas e claras para ajudar empresas e profissionais a apresentarem melhor o seu trabalho e a facilitarem o contacto com novos clientes.",primaryHref:"#contacto",secondaryHref:"#projetos"}},
+en:{career:{primary:"Explore expertise",secondary:"View experience",title:"Software, cloud & <em>ideas</em> brought to life.",desc:"Computer Engineering master's student with hands-on experience in web development, cloud infrastructure and security. I enjoy turning complex challenges into clear, practical digital solutions.",primaryHref:"#projetos",secondaryHref:"#experiencia"},business:{primary:"Let's discuss your site",secondary:"Explore expertise",title:"Websites that build <em>trust</em> and opportunities.",desc:"I create responsive, clear web experiences that help companies and professionals showcase their work and make it easy for customers to reach them.",primaryHref:"#contacto",secondaryHref:"#projetos"}}
 };
 let language='pt';let mode='career';try{if(localStorage.getItem('bp-lang')==='en')language='en'}catch(e){}
 const translatable=[...document.querySelectorAll('[data-i18n]')];
