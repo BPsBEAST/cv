@@ -62,13 +62,22 @@ pt:{career:{primary:"Explorar competências",secondary:"Ver experiência",title:
 en:{career:{primary:"Explore expertise",secondary:"View experience",title:"Software, cloud & <em>ideas</em> brought to life.",desc:"Computer Engineering master's student with hands-on experience in web development, cloud infrastructure and security. I enjoy turning complex challenges into clear, practical digital solutions.",primaryHref:"#projetos",secondaryHref:"#experiencia"},business:{primary:"Let's discuss your site",secondary:"Explore expertise",title:"Websites that build <em>trust</em> and opportunities.",desc:"I create responsive, clear web experiences that help companies and professionals showcase their work and make it easy for customers to reach them.",primaryHref:"#contacto",secondaryHref:"#projetos"}}
 };
 let language='pt';let mode='career';try{if(localStorage.getItem('bp-lang')==='en')language='en'}catch(e){}
+// URL language takes precedence when returning from the CV or following a direct language link.
+const urlLanguage=new URLSearchParams(window.location.search).get('lang');
+if(urlLanguage==='pt'||urlLanguage==='en'){
+ language=urlLanguage;
+ try{localStorage.setItem('bp-lang',language)}catch(e){}
+}
 const translatable=[...document.querySelectorAll('[data-i18n]')];
 const withMarkup=new Set(['heroTitle','contactTitle']);
 function translate(){
  document.documentElement.lang=language==='pt'?'pt-PT':'en';document.title=language==='pt'?'Bruno Pinto — Software, Cloud & Web':'Bruno Pinto — Software, Cloud & Web Portfolio';
  for(const node of translatable){const key=node.dataset.i18n;const value=translations[language][key];if(value===undefined)continue;if(withMarkup.has(key))node.innerHTML=value;else node.textContent=value}
  const toggle=document.querySelector('#lang-toggle');if(toggle){toggle.textContent=language==='pt'?'EN':'PT';toggle.setAttribute('aria-label',language==='pt'?'Switch language to English':'Mudar idioma para português')}
- applyMode();document.querySelector('#year').textContent=String(new Date().getFullYear())
+ applyMode();
+ // Keep the CV URL in sync with the selected language, even if storage is blocked.
+ document.querySelectorAll('a[href^="./cv.html"]').forEach(link=>link.setAttribute('href','./cv.html?lang='+language));
+ document.querySelector('#year').textContent=String(new Date().getFullYear())
 }
 function applyMode(){
  const copy=variantCopy[language][mode];document.querySelector('#hero-title').innerHTML=copy.title;document.querySelector('.hero-description').textContent=copy.desc;
