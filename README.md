@@ -109,11 +109,11 @@ A página adapta-se a ecrãs grandes e pequenos, incluindo computadores, tablets
 
 ### Idiomas — português e inglês
 
-A página principal suporta **PT e EN**.
+A página principal **e o currículo** suportam **PT e EN**.
 
-A tradução dos textos e dos botões é feita em `app.js`. A preferência de idioma é guardada no `localStorage` do navegador, quando disponível.
+A página principal usa as traduções de `app.js`; o currículo usa o ficheiro `cv-i18n.js`. A preferência de idioma é guardada em `localStorage`, quando disponível, e também transmitida através do parâmetro `?lang=pt` ou `?lang=en` nas ligações entre páginas.
 
-O seletor de público também altera as mensagens da secção inicial em cada idioma. **O currículo `cv.html` está atualmente apenas em português.**
+Ao selecionar inglês no website e abrir o currículo, este aparece em inglês; o mesmo acontece em português. O currículo inclui um botão para mudar de idioma sem regressar ao início. **O idioma apresentado é também o idioma usado ao imprimir ou guardar o CV como PDF**. O seletor de público mantém as mensagens adequadas a cada idioma na página inicial.
 
 ### Movimento e animação
 
@@ -155,6 +155,9 @@ O currículo inclui:
 3. Na janela de impressão do navegador, selecionar **Guardar como PDF**;
 4. Guardar o ficheiro.
 
+
+**Idiomas ao abrir o currículo:** o link da página principal passa o idioma selecionado em `?lang=pt` ou `?lang=en`. O `cv-i18n.js` aplica a tradução antes de a pessoa imprimir o documento. É também possível mudar de idioma diretamente no CV através do botão PT/EN.
+
 Os estilos `@media print` reorganizam o cabeçalho, os espaçamentos e as colunas para impressão A4. A **fotografia frontal está incorporada no próprio HTML como JPEG em base64**, evitando depender de um ficheiro externo quando o currículo é impresso ou convertido em PDF.
 
 > Este botão utiliza a funcionalidade de impressão do navegador (`window.print()`). Não gera nem guarda automaticamente um PDF no servidor. A paginação final pode variar entre navegadores e definições de impressão.
@@ -180,8 +183,9 @@ A preferência de idioma é o único estado persistente no navegador identificad
 cv/
 ├── index.html       # Página principal e respetivas secções
 ├── styles.css       # Estilos, responsividade e componentes visuais
-├── app.js           # Traduções, seletor de público e interatividade
-├── cv.html          # Currículo em formato de impressão/PDF
+├── app.js           # Traduções da página, seletor de público e interatividade
+├── cv-i18n.js       # Tradução PT/EN e sincronização de idioma do currículo
+├── cv.html          # Currículo bilingue em formato de impressão/PDF
 ├── photo-front.svg  # Foto frontal usada no website
 ├── photo-side.svg   # Foto lateral usada na secção Sobre
 ├── bp-favicon.png   # Favicon bp. escolhido para o separador
@@ -223,7 +227,7 @@ O comando anterior exige Python instalado. Em alternativa, pode ser utilizada um
 
 ### Alterar os textos da página principal
 
-Os conteúdos iniciais das secções encontram-se em `index.html`. As versões traduzidas são definidas no objeto `translations` em `app.js`.
+Os conteúdos iniciais das secções encontram-se em `index.html`. As versões traduzidas da página principal são definidas no objeto `translations` em `app.js`. As traduções do currículo estão no objeto `cvEnglish` em `cv-i18n.js`.
 
 Ao alterar uma mensagem com o atributo `data-i18n`, é importante atualizar **ambos os idiomas** no objeto de traduções. Caso contrário, o JavaScript poderá substituir o texto editado por uma versão desatualizada.
 
