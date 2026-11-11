@@ -60,3 +60,14 @@
 .network-core{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:70px;display:grid;place-items:center;background:#ccfa77;color:#17394a;border:6px solid #608d9e;border-radius:16px;font-size:35px;z-index:3}
 @media(max-width:900px){.capabilities-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.capability-card:last-child{grid-column:span 2}.capability-copy p{min-height:0}.hero-visual-photo{min-height:460px}.hero-photo-frame{max-width:340px}}
 @media(max-width:680px){.capabilities-grid{grid-template-columns:1fr}.capability-card:last-child{grid-column:auto}.capability-art{height:240px}.capabilities-footer{flex-direction:column;align-items:flex-start;padding:22px}.capabilities-footer .button{width:100%}.hero-visual-photo{min-height:390px;max-width:390px;margin:25px auto 6px}.hero-photo-frame{width:270px;height:360px;flex:none}.photo-orbit{width:375px;height:375px}.hero-photo-caption{left:0;bottom:6px;font-size:9px}.hero-photo-stripe{right:2px;top:50px}.about-photo>img{height:300px}.contact-decoration{top:-155px}.contact-decoration .spark-glyph{width:250px;height:250px}}
+
+
+/* Social discovery and original portrait presentation */
+.contact-socials{position:relative;display:flex;gap:12px 25px;justify-content:center;flex-wrap:wrap;margin:25px auto 0}
+.contact-socials a{display:inline-flex;gap:6px;align-items:center;color:#d2dcec;border-bottom:1px solid #71819b;font-size:12px;font-weight:700;transition:color .2s}
+.contact-socials a:hover{color:var(--lime)}
+.contact-socials .icon{width:13px;height:13px}
+.footer-links{flex-wrap:wrap;row-gap:8px}
+.hero-photo-frame img{transform:scale(1.18);transform-origin:center 46%;object-position:center 44%}
+.hero-photo-frame:hover img{transform:scale(1.22)}
+@media(max-width:680px){.contact-socials{gap:11px 18px}.footer-links{flex-wrap:wrap;justify-content:flex-start;gap:10px 17px}}
