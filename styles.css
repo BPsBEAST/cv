@@ -71,3 +71,23 @@
 .hero-photo-frame img{transform:scale(1.18);transform-origin:center 46%;object-position:center 44%}
 .hero-photo-frame:hover img{transform:scale(1.22)}
 @media(max-width:680px){.contact-socials{gap:11px 18px}.footer-links{flex-wrap:wrap;justify-content:flex-start;gap:10px 17px}}
+
+
+/* Accessible social profile cards */
+.contact-panel{isolation:isolate}
+.contact-panel::before,.contact-decoration,.contact-decoration *{pointer-events:none}
+.contact-buttons{z-index:2}
+.contact-socials{position:relative;z-index:3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:725px;margin:31px auto 0;padding:21px 0 0;border-top:1px solid rgba(211,228,255,.16)}
+.contact-socials .social-card{position:relative;z-index:3;display:flex;align-items:center;gap:12px;min-width:0;min-height:70px;padding:12px 14px;border:1px solid rgba(210,225,255,.19);border-radius:9px;background:rgba(255,255,255,.055);color:#f1f5ff;text-align:left;text-decoration:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.04);cursor:pointer;pointer-events:auto;transition:background .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
+.contact-socials .social-card:hover{transform:translateY(-3px);background:rgba(215,249,148,.11);border-color:var(--lime);box-shadow:0 12px 30px rgba(0,0,0,.22);color:white}
+.contact-socials .social-card:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-color:var(--lime)}
+.contact-socials .social-icon{height:39px;width:39px;flex:0 0 39px;display:grid;place-items:center;border-radius:9px;background:rgba(204,250,119,.13);color:var(--lime);pointer-events:none}
+.contact-socials .social-icon .icon{height:20px;width:20px;stroke-width:1.9}
+.contact-socials .social-info{min-width:0;display:flex;flex-direction:column;line-height:1.4;pointer-events:none}
+.contact-socials .social-info strong{font-size:13px;font-weight:800;letter-spacing:.005em;color:#fff}
+.contact-socials .social-info small{font-size:10px;margin-top:3px;color:#a3b1c6;overflow-wrap:anywhere}
+.contact-socials .social-arrow{margin-left:auto;align-self:flex-start;flex:0 0 14px;width:14px;height:14px;color:#9cabbe;pointer-events:none}
+.contact-socials .social-card:hover .social-arrow{color:var(--lime)}
+.contact-panel>.email-display{z-index:3;position:relative;display:inline-block;margin-top:26px}
+@media(max-width:720px){.contact-socials{grid-template-columns:1fr;max-width:390px;gap:9px;padding-top:17px;margin-top:24px}.contact-socials .social-card{min-height:61px;padding:10px 13px}.contact-socials .social-icon{height:37px;width:37px;flex-basis:37px}.contact-panel>.email-display{margin-top:24px}}
+@media(prefers-reduced-motion:reduce){.contact-socials .social-card{transition:none}}
